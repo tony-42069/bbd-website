@@ -45,6 +45,9 @@ bbd-website/
 │   ├── data/           # Static data and content
 │   └── utils/          # Utility functions
 ├── public/             # Static assets
+├── docs/              # Documentation
+│   ├── migration/     # Migration guides and plans
+│   └── deployment/    # Deployment instructions
 └── ...configuration files
 ```
 
@@ -57,6 +60,34 @@ bbd-website/
 - Contact form with validation
 - Responsive navigation
 - Mobile-friendly interface
+
+## 📧 Email & Domain Infrastructure
+
+Current Setup:
+- Domain Registration: GoDaddy
+- Email Hosting: GoDaddy
+- Website Hosting: GoDaddy
+
+Planned Migration:
+- Email: Microsoft 365 Business
+- Domain: Remains on GoDaddy
+- Website Hosting: Vercel (Next.js)
+
+### Migration Plan
+
+1. Email Migration (GoDaddy → Microsoft 365)
+   - Purchase Microsoft 365 Business licenses
+   - Verify domain ownership
+   - Configure DNS records
+   - Migrate existing email data
+   - Update MX records
+   - Document in `/docs/migration/email-migration.md`
+
+2. Website Deployment
+   - Set up Vercel deployment
+   - Configure domain settings
+   - Update DNS records
+   - Document in `/docs/migration/website-migration.md`
 
 ## 🔐 Environment Variables
 
