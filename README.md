@@ -1,10 +1,10 @@
-# Donika's Home Baked Goods Website
+# DHBG Website
 
-A modern, responsive website for Donika's Home Baked Goods, featuring a dark purple and pink theme that showcases artisanal baked goods with style.
+A modern, responsive website for DHBG, featuring a dark purple and pink theme that showcases artisanal baked goods with style.
 
 ## 🍰 About
 
-This website serves as the digital storefront for Donika's Home Baked Goods, where 40 years of baking expertise meets modern web design. The site features a custom order system, product gallery, and an elegant user interface that reflects the artisanal nature of Donika's baked goods.
+This website serves as the digital storefront for DHBG, where 40 years of baking expertise meets modern web design. The site features a custom order system, product gallery, and an elegant user interface that reflects the artisanal nature of Donika's baked goods.
 
 ## 🚀 Technologies Used
 
@@ -130,6 +130,3 @@ All rights reserved - Donika's Home Baked Goods © 2024
 - UI/UX Design: @CREdebtDorian
 - Development: @CREdebtDorian
 
-## 🙏 Credits
-
-Special thanks to Donika for providing the authentic recipes and inspiration behind this digital experience.
