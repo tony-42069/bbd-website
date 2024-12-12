@@ -122,7 +122,7 @@ The site is configured for deployment on Vercel. Each push to the main branch wi
 
 ## 📝 License
 
-All rights reserved - Donika's Home Baked Goods © 2024
+All rights reserved - DHBG © 2024
 
 ## 👥 Contributors
 
