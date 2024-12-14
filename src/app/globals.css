@@ -2,24 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --brand-purple: 215 183 255;   /* #d7b7ff */
-  --brand-pink: 240 120 177;     /* #f078b1 */
-  --brand-dark-red: 93 0 44;     /* #5d002c */
-  --brand-lime: 183 255 195;     /* #b7ffc3 */
-  --brand-cream: 252 235 219;    /* #fcebdb */
+@layer base {
+  body {
+    @apply bg-purple-950;
+  }
 }
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-brand-darkRed via-brand-pink to-brand-purple bg-clip-text text-transparent;
-  }
-  
-  .nav-link {
-    @apply text-brand-darkRed hover:text-brand-pink transition-colors;
-  }
-  
-  .btn-primary {
-    @apply bg-brand-pink text-white px-6 py-3 rounded-lg hover:bg-brand-darkRed transition-colors font-medium;
+    @apply bg-gradient-to-r from-pink-400 via-brand-pink to-brand-purple bg-clip-text text-transparent;
   }
 }
