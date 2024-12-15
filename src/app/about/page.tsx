@@ -15,9 +15,18 @@ export default function AboutPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-5xl font-greatVibes text-brand-darkRed mb-8">
-            Our Story
-          </h1>
+          <div className="flex items-center gap-4 mb-8">
+            <Image 
+              src="/logo.png"
+              alt="Donika's Home Baked Goods Logo"
+              width={80}
+              height={80}
+              className="rounded-full"
+            />
+            <h1 className="text-4xl md:text-5xl font-greatVibes text-brand-darkRed">
+              Our Story
+            </h1>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
@@ -55,10 +64,14 @@ export default function AboutPage() {
             </div>
 
             <div className="relative h-[600px] rounded-lg overflow-hidden shadow-xl">
-              {/* Replace with your actual image path */}
-              <div className="absolute inset-0 bg-brand-purple/20 flex items-center justify-center text-brand-darkRed">
-                [Your Baker Image Here]
-              </div>
+              <Image
+                src="/Background_2.0.png"
+                alt="Bakery Background"
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-brand-purple/20" />
             </div>
           </div>
         </motion.div>
