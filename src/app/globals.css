@@ -1,15 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply bg-purple-950;
-  }
-}
-
 @layer components {
-  .gradient-text {
-    @apply bg-gradient-to-r from-pink-400 via-brand-pink to-brand-purple bg-clip-text text-transparent;
+  .btn-primary {
+    @apply bg-pink-400 text-white px-6 py-3 rounded-lg font-medium hover:bg-pink-500 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-purple-300 text-purple-950 px-6 py-3 rounded-lg font-medium hover:bg-purple-400 transition-colors;
   }
 }

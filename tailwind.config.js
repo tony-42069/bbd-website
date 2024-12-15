@@ -11,8 +11,12 @@ module.exports = {
           pink: '#f078b1',
           purple: '#d7b7ff',
           lime: '#b7ffc3',
-          light: '#fcebdb'
+          light: '#fcebdb',
+          cream: '#fcebdb'
         }
+      },
+      fontFamily: {
+        greatVibes: ['Great Vibes', 'cursive']
       }
     },
   },
