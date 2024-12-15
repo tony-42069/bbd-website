@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Navbar from '@/components/Navbar'
+import Gallery from '@/components/Gallery'
 import { motion } from 'framer-motion'
 
 export default function GalleryPage() {
@@ -22,10 +23,7 @@ export default function GalleryPage() {
             Take a look at some of our favorite creations
           </p>
 
-          {/* Gallery grid will go here */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Gallery items will go here */}
-          </div>
+          <Gallery />
         </motion.div>
       </div>
     </main>
