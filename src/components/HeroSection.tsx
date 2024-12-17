@@ -1,6 +1,18 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
+
+const fadeInUpVariants = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.8 }
+}
+
+const buttonHoverVariants = {
+  hover: { scale: 1.05 },
+  tap: { scale: 0.95 }
+}
 
 const HeroSection = () => {
   return (
@@ -9,9 +21,7 @@ const HeroSection = () => {
       
       <motion.div 
         className="text-center z-10 px-4"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        {...fadeInUpVariants}
       >
         <h1 className="font-greatVibes text-6xl md:text-8xl mb-6 gradient-text">
           Donika&apos;s
@@ -24,22 +34,16 @@ const HeroSection = () => {
           bringing joy to every occasion.
         </p>
         <div className="flex gap-4 justify-center">
-          <motion.a
-            href="/order"
-            className="btn-primary"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Order Now
-          </motion.a>
-          <motion.a
-            href="/menu"
-            className="btn-secondary"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            View Menu
-          </motion.a>
+          <motion.div {...buttonHoverVariants}>
+            <Link href="/order" className="btn-primary">
+              Order Now
+            </Link>
+          </motion.div>
+          <motion.div {...buttonHoverVariants}>
+            <Link href="/menu" className="btn-secondary">
+              View Menu
+            </Link>
+          </motion.div>
         </div>
       </motion.div>
     </section>

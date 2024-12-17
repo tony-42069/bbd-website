@@ -1,0 +1,7 @@
+.heroGradient {
+  @apply absolute inset-0 bg-gradient-to-b from-brand-purple/10 to-transparent;
+}
+
+.heroContainer {
+  @apply relative h-screen flex items-center justify-center bg-brand-cream;
+} 
