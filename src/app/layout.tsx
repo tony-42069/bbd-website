@@ -1,8 +1,20 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Great_Vibes } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+// Font configurations
+const inter = Inter({ 
+  subsets: ['latin'], 
+  variable: '--font-inter',
+  display: 'swap'
+})
+
+const greatVibes = Great_Vibes({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-great-vibes',
+  display: 'swap'
+})
 
 export const metadata: Metadata = {
   title: "Donika's Home Baked Goods",
@@ -16,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-purple-950 min-h-screen`}>
+      <body className={`${inter.variable} ${greatVibes.variable} font-sans min-h-screen`}>
         {children}
       </body>
     </html>
